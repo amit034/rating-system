@@ -1,0 +1,14 @@
+<ul>
+  <li ng-repeat='comment in $ctrl.comments'>
+    <img gravatar-src-once="comment.email" />
+    <p>
+        <span>
+          {{ comment.comment }}
+        </span>
+        <span>
+            <span vote rate="comment.rating.rate" count="comment.rating.count" max="5" on-change="$ctrl.rateComment(comment._id, rate)"></span>
+        </span>
+    </p>
+  </li>
+</ul>
+

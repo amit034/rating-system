@@ -1,0 +1,21 @@
+.rating {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.rating li {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 25px;
+
+}
+
+.star {
+  cursor: pointer;
+  color: black;
+}
+
+.star.active {
+  color: orange;
+}
